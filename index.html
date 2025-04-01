@@ -4,22 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>D’lio | Rooted in Calm</title>
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- Alpine.js for mobile menu -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  
+  <!-- AOS animation -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to bottom, #E3BBA7, #C66358);
-      color: #3F2D2D;
+      color: #3F2D2D; /* readable warm contrast */
     }
     h1, h2, h3 {
       font-family: 'Playfair Display', serif;
     }
+    .hero-button {
+      background-color: #fff;
+      color: #3F2D2D;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.375rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .hero-button:hover {
+      background-color: #f4dbd3;
+      transform: scale(1.05);
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Header -->
@@ -56,7 +79,7 @@
   <section class="text-center py-20 px-4" data-aos="fade-up">
     <h2 class="text-4xl md:text-6xl font-semibold mb-4">Rooted in Calm</h2>
     <p class="max-w-xl mx-auto text-lg mb-6">D’lio is a caffeine-free dandelion root coffee alternative designed for ritual, wellness, and gentle energy.</p>
-    <a href="#shop" class="bg-[#F9D7CF] text-[#C66358] py-2 px-6 rounded hover:bg-[#e8b1a2] hover:scale-105 transition duration-300 shadow-md font-semibold">Shop Now</a>
+    <a href="#shop" class="hero-button">Shop Now</a>
   </section>
 
   <!-- About Section -->
@@ -101,11 +124,10 @@
     &copy; 2025 D’lio. Sip Slow. Bloom Bold.
   </footer>
 
-  <!-- Init AOS Animations -->
+  <!-- AOS Init -->
   <script>
     AOS.init({ once: true, duration: 800, easing: 'ease-in-out' });
   </script>
 
 </body>
 </html>
-
