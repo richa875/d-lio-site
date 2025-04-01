@@ -45,15 +45,21 @@
 
 <body>
 
-  <!-- Splash Intro Section -->
-  <section id="splash" class="w-full h-screen relative bg-[#E3BBA7] overflow-hidden flex items-center justify-center">
+  <!-- Splash Intro Section (Desktop Only) -->
+  <section id="splash" class="hidden md:flex w-full h-screen relative bg-[#E3BBA7] overflow-hidden items-center justify-center">
     <img src="assets/logo.png" alt="D’lio Logo"
-         class="w-full h-full object-contain md:object-cover md:object-center" />
+         class="w-full h-full object-cover object-center" />
     <div class="absolute bottom-0 w-full h-10 bg-gradient-to-b from-[#E3BBA7] to-[#C66358] opacity-25 pointer-events-none"></div>
     <div class="absolute bottom-6 w-full text-center animate-bounce">
       <a href="#hero" class="text-2xl text-[#3F2D2D]">↓</a>
     </div>
   </section>
+
+  <!-- Mobile Logo Band -->
+  <div class="block md:hidden relative bg-[#E3BBA7]">
+    <img src="assets/logo.png" alt="D’lio Logo" class="w-full max-h-24 object-contain px-4 py-2" />
+    <div class="absolute bottom-0 w-full h-6 bg-gradient-to-b from-[#E3BBA7] to-[#C66358] opacity-25 pointer-events-none"></div>
+  </div>
 
   <!-- Header with Nav -->
   <header class="w-full bg-[#E3BBA7]">
