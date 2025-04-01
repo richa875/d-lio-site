@@ -22,7 +22,7 @@
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to bottom, #E3BBA7, #C66358);
-      color: #3F2D2D; /* readable warm contrast */
+      color: #3F2D2D;
     }
     h1, h2, h3 {
       font-family: 'Playfair Display', serif;
@@ -46,11 +46,16 @@
 <body>
 
   <!-- Header -->
-  <div class="relative">
-    <img src="assets/logo.png" alt="D’lio Logo" class="w-full max-h-44 sm:max-h-64 object-cover" />
-    <div class="absolute bottom-0 w-full h-6 bg-gradient-to-b from-[#E3BBA7] to-[#C66358] opacity-25 pointer-events-none"></div>
-  </div>
-  
+  <header class="w-full bg-[#E3BBA7]">
+
+    <!-- Full-width Hero Logo with Shadow (Responsive) -->
+    <div class="relative w-full h-auto md:min-h-[60vh] overflow-hidden">
+      <img src="assets/logo.png"
+           alt="D’lio Logo"
+           class="w-full h-full object-cover object-center max-h-44 sm:max-h-64 md:max-h-none" />
+      <div class="absolute bottom-0 w-full h-6 bg-gradient-to-b from-[#E3BBA7] to-[#C66358] opacity-25 pointer-events-none"></div>
+    </div>
+
     <!-- Navigation -->
     <nav x-data="{ open: false }" class="text-white w-full">
       <!-- Mobile Toggle -->
